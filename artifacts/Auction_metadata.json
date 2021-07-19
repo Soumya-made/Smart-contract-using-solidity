@@ -1,0 +1,157 @@
+{
+	"compiler": {
+		"version": "0.4.17+commit.bdeb9e52"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "register",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_itemId",
+						"type": "uint256"
+					},
+					{
+						"name": "_count",
+						"type": "uint256"
+					}
+				],
+				"name": "bid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getPersonDetails",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "revealWinners",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "winners",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "items",
+				"outputs": [
+					{
+						"name": "itemId",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Auction.sol": "Auction"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Auction.sol": {
+			"keccak256": "0x9998effbeaaa5a76b6143733a3cc61b0076affb762b1b7613b80890501445b05",
+			"urls": [
+				"bzzr://7184185d4f9dd8ab2605961db66583717d821569d0aa2152650380746836f86c"
+			]
+		}
+	},
+	"version": 1
+}

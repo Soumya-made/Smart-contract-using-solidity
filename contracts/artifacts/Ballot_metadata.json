@@ -1,0 +1,116 @@
+{
+	"compiler": {
+		"version": "0.4.17+commit.bdeb9e52"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toVoter",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"name": "_winningProposal",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toProposal",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "stage",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_numProposals",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "votingCompleted",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"register(address)": {
+					"notice": "Give $(toVoter) the right to vote on this ballot.\r May only be called by $(chairperson).\r"
+				},
+				"vote(uint8)": {
+					"notice": "Give a single vote to proposal $(toProposal).\r"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ballotmodifier.sol": "Ballot"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ballotmodifier.sol": {
+			"keccak256": "0x6b1c64fd41f43fabb709200a4330c156e5f1f9e808ae7aa8721fef3bb5891049",
+			"urls": [
+				"bzzr://a02efdfb36db8ac244b1e15f546c125491c12544c14c1d97c14e9cb9b778ba2e"
+			]
+		}
+	},
+	"version": 1
+}
